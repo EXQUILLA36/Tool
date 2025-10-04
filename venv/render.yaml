@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: aternos-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python flask_app.py"
+    runtime: "python-3.11.9"
