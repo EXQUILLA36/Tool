@@ -3,6 +3,8 @@ from discord.ext import commands
 import os
 import asyncio
 from keep_alive import keep_alive  # <- import from keep_alive.py
+from dotenv import load_dotenv
+load_dotenv()
 
 print("TOKEN FOUND:", bool(os.getenv("DISCORD_TOKEN")))
 print("TOKEN VALUE:", os.getenv("DISCORD_TOKEN"))
