@@ -1,12 +1,16 @@
 from python_aternos import Client
 from python_aternos.aterrors import ServerStartError
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 try:
     # Create client
     atclient = Client()
 
     # Log in with username + password
-    atclient.login('AternosAutoRunBot', 'ZzRJGVmvtCisrL2')
+    atclient.login(os.getenv("DISCORD_USER"), os.getenv("DISCORD_PASS"))
 
     # Get account
     aternos = atclient.account
