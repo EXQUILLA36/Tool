@@ -4,6 +4,9 @@ import os
 import asyncio
 from keep_alive import keep_alive  # <- import from keep_alive.py
 
+print("TOKEN FOUND:", bool(os.getenv("DISCORD_TOKEN")))
+print("TOKEN VALUE:", os.getenv("DISCORD_TOKEN"))
+
 intents = discord.Intents.default()
 intents.message_content = True  # needed for commands
 
