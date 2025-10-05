@@ -7,6 +7,8 @@ load_dotenv()
 
 try:
     # Create client
+    print("USER:", os.getenv("DISCORD_USER"))
+    print("PASS FOUND:", bool(os.getenv("DISCORD_PASS")))
     atclient = Client()
 
     # Log in with username + password
