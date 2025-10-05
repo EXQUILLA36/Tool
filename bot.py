@@ -8,6 +8,9 @@ load_dotenv()
 
 print("TOKEN FOUND:", bool(os.getenv("DISCORD_TOKEN")))
 print("TOKEN VALUE:", os.getenv("DISCORD_TOKEN"))
+print("USER:", os.getenv("DISCORD_USER"))
+print("PASS FOUND:", bool(os.getenv("DISCORD_PASS")))
+
 
 intents = discord.Intents.default()
 intents.message_content = True  # needed for commands
